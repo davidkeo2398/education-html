@@ -2,34 +2,218 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
     width: 100vw;
     height: 100vh;
 }
-.main{
+
+.main {
     height: 100%;
     display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
-.left-side{
-    width: 80px;
-    background-color: rgb(243, 235, 228);
+.left-side,
+.content-container,
+.right-side {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.left-side {
+    background-color: rgb(243, 235, 228);
+    width: 150px;
     margin-left: 15px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
 }
 
-.content{
-    width: auto;
-}
 
-.right-side{
-    width: 400px;
+
+.right-side {
+    width: 700px;
     background-color: rgb(243, 235, 228);
-    margin-top: 15px;
-    margin-bottom: 15px;
     margin-right: 15px;
     border-radius: 10px;
+}
+
+/* left side */
+.left-bar {
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* left top  */
+.left-side-top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-btn {
+    width: 60px;
+    height: 60px;
+}
+
+.brand-shopping,
+.brand-home,
+.brand-work,
+.brand-book,
+.brand-more,
+.brand-setting,
+.brand-avatar {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.logo-bird {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-side-logo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* left middle */
+.left-side-middle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* left bottom */
+.left-side-bottom-container {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* content */
+.content-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    min-height: 748px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+
+}
+
+.hidden-scroll {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.title-content {
+    font-weight: lighter;
+    text-align: start;
+    font-size: 4rem;
+}
+
+.warp-title-content {
+    padding-top: 30px;
+}
+
+.filter-bar {
+    height: 80px;
+    min-height: 80px;
+    width: 100%;
+    /* background-color: black; */
+}
+
+.filter-bar-container {
+    min-height: 80px;
+    min-width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.filter-bar-container::-webkit-scrollbar .content::-webkit-scrollbar {
+    display: none;
+}
+
+.content-advertise {
+    min-height: 350px;
+}
+
+.most-popular {
+    width: 100%;
+    height: 350px;
+    background-color: blue;
+}
+
+.feature-course {
+    width: 100%;
+    height: 350px;
+    background-color: pink;
+}
+
+.filter-border-radius {
+    width: auto;
+    height: 70px;
+    min-height: 70px;
+    width: auto;
+    background-color: #f3ebe4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    border-radius: 50px;
+}
+
+
+.filter-logo-container {
+    width: 60px;
+    height: 60px;
+    min-height: 60px;
+    min-width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+}
+
+.filter-logo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
