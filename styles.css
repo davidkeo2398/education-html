@@ -171,13 +171,22 @@ body {
 }
 
 .content-advertise {
-    min-height: 350px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.most-popular {
+.advertise-block {
     width: 100%;
     height: 350px;
-    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* background-color: blue; */
+}
+.most-popular-title{
+    padding-left: 10px;
 }
 
 .feature-course {
@@ -216,4 +225,118 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.advertise-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    height: 350px;
+}
+
+.advertise-item {
+    width: 100%;
+    height: 350px;
+
+}
+
+.content-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-1 {
+    border-radius: 40px;
+    background-color: #f3c5c5;
+}
+
+.item-logo-container {
+    width: 40px;
+    height: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.item-rate {
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    right: 20px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.star-logo {
+    padding-left: 10px;
+}
+
+.rate-amount {
+    padding-right: 10px;
+}
+
+.description {
+    text-align: start;
+    font-size: 26px;
+    padding-left: 20px;
+}
+
+.item-student-amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.student-amount {
+    padding-left: 20px;
+}
+
+.logo-student {
+    padding-right: 20px;
+}
+
+.img-avt {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.item-2 {
+    border-radius: 40px;
+    background-color: #d5d3ff;
+}
+
+.item-3 {
+    border-radius: 40px;
+    background-color: #f9e1c0;
+}
+
+.item-4 {
+    border-radius: 40px;
+    background-color: #bef1dc
 }
