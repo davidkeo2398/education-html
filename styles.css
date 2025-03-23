@@ -185,7 +185,8 @@ body {
     gap: 10px;
     /* background-color: blue; */
 }
-.most-popular-title{
+
+.most-popular-title {
     padding-left: 10px;
 }
 
@@ -339,4 +340,118 @@ body {
 .item-4 {
     border-radius: 40px;
     background-color: #bef1dc
+}
+
+/* right side */
+.right-side-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notification-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.notification-logo {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.setting-logo {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.user-information-conatiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-user {
+    position: relative;
+    top: -15px;
+}
+
+.avt-user-img {
+    border-radius: 50%;
+}
+
+.friend-bar-container {
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.friend-bar {
+    background-color: white;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.avt-user-friend {
+    padding-left: 10px;
+}
+
+.friend-user-img {
+    border-radius: 50%;
+}
+.friend-user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+}
+.chart-bar-conatainer{
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.chart-bar{
+   background-color: white;
+   height: 100%;
+   border-radius: 40px;
+}
+.chart-bar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.activity-bar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.activity-title{
+    padding-left: 20px;
+}
+.year-btn{
+    position: relative;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid #edecea;
+    border-radius: 40px;
+}
+.year-label, .arrow-down-logo{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.year-label{
+    padding-left: 5px;
+}
+.arrow-down-logo{
+    padding-right: 5px;
 }
